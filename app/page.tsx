@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 export default function Page() {
   return (
     <>
-      <div className="w-[1280px] h-[4400px] flex gap-[15px] items-center justify-center absolute z-[999] top-0 opacity-50">
+      <div className="w-[1280px] h-[4400px] flex gap-[15px] items-center justify-center absolute z-[999] top-0 opacity-25">
         <div className="w-full h-full bg-red-200"></div>
         <div className="w-full h-full bg-red-200"></div>
         <div className="w-full h-full bg-red-200"></div>
@@ -21,18 +21,22 @@ export default function Page() {
         <div className="w-full h-full bg-red-200"></div>
         <div className="w-full h-full bg-red-200"></div>
       </div>
-      <main className="w-full max-h-[1280px] flex min-h-screen justify-center">
-        <Header />
-        <Image
+      <Header />
+      <main
+        className="w-full h-[1280px] flex items-center justify-end bg-contain bg-no-repeat bg-center h-full w-full"
+        style={{ backgroundImage: "url('/bg-init.webp')" }}
+      >
+        {/* <Image
           src="/bg-init.webp"
           width={1920}
           height={1280}
-          className="hidden md:block absolute z-[-1]"
+          className="hidden md:block relative z-[-1]"
+          objectFit="cover"
           alt="Background image of a beauty woman"
-        />
-        <div className="w-2/4 flex flex-col">
+        /> */}
+        <div className="w-2/4 flex flex-col gap-y-4 pl-2 mt-[360px]">
           <h1 className="text-6xl font-bold">Lorem Ipsum</h1>
-          <p>
+          <p className="w-4/6 text-left">
             is simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever since the
             1500s, when an unknown printer took a galley of type and scrambled
