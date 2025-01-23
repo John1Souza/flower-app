@@ -1,9 +1,7 @@
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import Header from "./components/Header";
-import Image from "next/image";
 import Main from "./components/Main";
 import About from "./components/About";
+import Rights from "./components/Rights";
 
 export default function Page() {
   return (
@@ -25,6 +23,7 @@ export default function Page() {
       <Header />
       <Main />
       <About />
+      <Rights />
     </div>
   );
 }
