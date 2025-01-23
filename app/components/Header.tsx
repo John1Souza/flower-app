@@ -5,7 +5,7 @@ import { PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
-    <header className="w-full max-w-[1280px] h-[270px] bg-[#fff] mt-24 shadow-[0px_0px_25px_0px_#00000025] absolute top-0 rounded-2xl">
+    <header className="hidden md:block w-full max-w-[1280px] h-[270px] bg-[#fff] mt-24 shadow-[0px_0px_25px_0px_#00000025] absolute top-0 rounded-2xl">
       <div className="w-full h-3/4 flex items-center justify-around">
         <Image
           src="/logo.png"

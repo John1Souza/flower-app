@@ -11,6 +11,16 @@ const config: Config = {
       gridTemplateColumns: {
         "13": "repeat(13, minmax(0, 1fr))",
       },
+      fontSize: {
+        sm: "0.875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.75rem",
+        "3xl": "2.25rem",
+        "4xl": "2.875rem",
+        "5xl": "4rem",
+      },
       colors: {
         blue: {
           400: "#00AFEF",
@@ -30,6 +40,9 @@ const config: Config = {
         accent: "#B6B6B6",
         neutral: "#F5F2F0",
         background: "#F3F4F6",
+      },
+      backgroundImage: {
+        hero: "url('/bg-init.webp')",
       },
     },
     keyframes: {

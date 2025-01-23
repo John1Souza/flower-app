@@ -8,11 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} w-full flex flex-col bg-neutral items-center justify-center`}
-      >
-        {children}
-      </body>
+      <body className={`${poppins.className}`}>{children}</body>
     </html>
   );
 }
